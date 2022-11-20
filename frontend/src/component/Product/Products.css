@@ -1,0 +1,126 @@
+.productsHeading{
+    margin: 2vmax auto;
+    width: 15vw;
+    border-bottom: 1px solid gray;
+    padding: 2vmax;
+    color: darkslategray;
+    font: 500 1.5vmax "Roboto";
+    text-align: center;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5vmax;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.paginationBox{
+    display: flex;
+    justify-content: center;
+    margin: 6vmax;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    
+}
+
+.page-item{
+    background-color: white;
+    list-style: none;
+    border: 1px solid gray;
+    padding: 1vmax 1.5vmax;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.page-item:first-child{
+    border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child{
+    border-radius:  0 5px 5px 0;
+}
+
+.page-item:hover{
+    background-color: #D1EDE1;
+}
+
+.page-link {
+    text-decoration: none;
+    font: 300 0.9vmax "Roboto";
+    color: #7BC5AE ;
+    transition: all 0.3s;
+}
+
+.page-item:hover .page-link {
+    color: #7BC5AE ;
+}
+
+.pageItemActive{
+    background-color: #D1EDE1;
+}
+
+.pageLinkActive{
+    color: #7BC5AE;
+}
+
+
+/* --------------- Filter Box ---------------- */
+.filterBox{
+    width: 10vmax;
+    position: absolute;
+    top: 10vmax;
+    left: 2vmax;
+}
+
+
+.categoryBox{
+    padding: 0;
+}
+
+.categoryLink{
+    list-style: none;
+    color: gray;
+    font: 400 1vmax "Roboto";
+    margin: 0.4vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.categoryLink:hover{
+    color: tomato;
+}
+
+.filterBox > fieldset {
+    border: 1px solid #7BC5AE;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .filterBox{
+        width: 30vmax;
+        position: static;
+        margin: auto;
+        text-align: center;
+    }
+
+    .page-link {
+        font: 300 1.7vmax "Roboto";
+    }
+
+    .categoryLink{
+        font: 400 1.9vmax "Roboto";
+    }
+    
+}

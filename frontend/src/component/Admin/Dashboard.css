@@ -1,0 +1,110 @@
+.dashboard {
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    position: absolute;
+}
+
+.dashboardContainer {
+    background-color: white;
+    border-left: 1px solid lightgray;
+    padding: 3rem 0;
+}
+
+.dashboardContainer > h1 {
+    color: gray;
+    font: 300 2rem "Roboto";
+    margin: auto;
+    padding: 1.5rem;
+    width: 50%;
+    text-align: center;
+}
+
+.dashboardSummary {
+    margin: 2rem 0;
+}
+
+.dashboardSummary > div {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+
+.dashboardSummary > div > p {
+    background-color: cadetblue ;
+    color: white;
+    margin: 0 2rem;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    font: 300 1.3rem "Roboto";
+
+}
+
+.dashboardSummaryBox2 > a {
+    color: black;
+    font: 300 2rem "Roboto";
+    text-align: center;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    text-decoration: none;
+    border-radius: 100%;
+    margin: 2rem;
+    height: 10vmax;
+    width: 10vmax;
+}
+
+.dashboardSummaryBox2 > a:first-child {
+    background-color: crimson;
+    color: white;
+}
+
+.dashboardSummaryBox2 > a:last-child {
+    background-color:navy ;
+    color: lightcyan;
+}
+
+
+.lineChart {
+    width: 80%;
+    margin: auto;
+}
+
+.doughnutChart {
+    width: 30vmax;
+    margin: auto;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboardContainer {
+        border-left: none;
+    }
+
+    .dashboardSummary > div > p {
+        margin: 0;
+    }
+
+    .dashboardSummaryBox2 > a {
+        padding: 0.5rem;
+        margin: 1rem;
+        font: 300 0.9rem "Roboto";
+    }
+
+
+
+    
+}
